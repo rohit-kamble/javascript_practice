@@ -9,10 +9,10 @@
 // const d = [2,5,6,8,4];
 // let total = 0;
 // function additionItrative () {
-    // by using reduce method
-    // return d.reduce((acc, val)=> acc + val);
-    
-    // by using simple itrative method
+// by using reduce method
+// return d.reduce((acc, val)=> acc + val);
+
+// by using simple itrative method
 //     for(let i=0; i< d.length; i++) {
 //         total += d[i];
 //     }
@@ -38,9 +38,9 @@
 // ***** maximum no in array *****
 
 // const array= [2,3,9,8,19,0,40,5];
-// const findMaxNoRecursive = (arr, n) => n === 0 ? 
-// arr[n] : findMaxNoRecursive(arr, n - 1) > arr[n] ? 
-//     findMaxNoRecursive(arr, n - 1) : 
+// const findMaxNoRecursive = (arr, n) => n === 0 ?
+// arr[n] : findMaxNoRecursive(arr, n - 1) > arr[n] ?
+//     findMaxNoRecursive(arr, n - 1) :
 //     arr[n]
 // console.log("find Max", findMaxNoRecursive(array, array.length - 1))
 
@@ -50,23 +50,23 @@
 // let max = 0;
 // function maximumItrative(){
 
-    // by using reduce method
-    // return arr.reduce((acc, val)=> acc > val ? acc : val);
+// by using reduce method
+// return arr.reduce((acc, val)=> acc > val ? acc : val);
 
-    // by using itrative method
-    // for(let i=0; i<arr.length; i++){
-    //     max = max > arr[i] ? max : arr[i];
-    // }
-    // return max;
+// by using itrative method
+// for(let i=0; i<arr.length; i++){
+//     max = max > arr[i] ? max : arr[i];
+// }
+// return max;
 // }
 // console.log('maximum---', maximumItrative());
 
 // ***** minmum no in array *****
 
 // const array= [3,9,8,19,40,5,1];
-// const findMinNoRecursive = (arr, n) => n === 0 ? 
-// arr[n] : findMinNoRecursive(arr, n - 1) < arr[n] ? 
-//     findMinNoRecursive(arr, n - 1) : 
+// const findMinNoRecursive = (arr, n) => n === 0 ?
+// arr[n] : findMinNoRecursive(arr, n - 1) < arr[n] ?
+//     findMinNoRecursive(arr, n - 1) :
 //     arr[n]
 // console.log("find Min", findMinNoRecursive(array, array.length - 1))
 
@@ -76,14 +76,14 @@
 // let max = 0;
 // function maximumItrative(){
 
-    // by using reduce method
-    // return arr.reduce((acc, val)=> acc < val ? acc : val);
+// by using reduce method
+// return arr.reduce((acc, val)=> acc < val ? acc : val);
 
-    // by using itrative method
-    // for(let i=0; i<arr.length; i++){
-    //     max = max < arr[i] ? max : arr[i];
-    // }
-    // return max;
+// by using itrative method
+// for(let i=0; i<arr.length; i++){
+//     max = max < arr[i] ? max : arr[i];
+// }
+// return max;
 // }
 // console.log('maximum---', maximumItrative());
 
@@ -97,7 +97,7 @@
 //   else {
 //     return findMultiRecursive(arr, lenght - 1) *  arr[lenght];
 //   }
-// } 
+// }
 // console.log('Total multiplication', findMultiRecursive(arr, arr.length - 1))
 
 // ***** multiplication by using itrative method *****
@@ -105,25 +105,25 @@
 // const arr = [3,4,3];
 // let ans= 1;
 // function multiplicationItrative () {
-    // multiplication no by using itrative
-    // for(let item of arr) {
-    //     ans = ans * item;
-    // }
-    // return ans;
+// multiplication no by using itrative
+// for(let item of arr) {
+//     ans = ans * item;
+// }
+// return ans;
 
-    // multiplication no by using reduce
-    // return arr.reduce((acc, val) => acc * val);
+// multiplication no by using reduce
+// return arr.reduce((acc, val) => acc * val);
 // }
 // console.log('Answer', multiplicationItrative())
 
-// ***** fibnaci series ***** 
+// ***** fibnaci series *****
 
 // const len = 7;
 // const fibbonaciSeris = (num) => {
 //     if( num === 1 || num === 2) {
 //         return 1;
 //   }
-//   else {    
+//   else {
 //     return fibbonaciSeris(num - 1) + fibbonaciSeris(num - 2);
 //   }
 // }
@@ -158,33 +158,32 @@
 // const str = "welcome to React";
 // const d = str.split(" ");
 // function reverseString(strArr) {
-    // let news = "";
-    // for(let i=0; i<=strArr.length - 1; i++){
-        
-        // using another method
-        // for(let j=strArr[i].length - 1; j>=0;j--){
-        //     news += strArr[i][j];
-        // }
-        // news += ' ';
+// let news = "";
+// for(let i=0; i<=strArr.length - 1; i++){
 
-        // const t = strArr[i].split("")
+// using another method
+// for(let j=strArr[i].length - 1; j>=0;j--){
+//     news += strArr[i][j];
+// }
+// news += ' ';
 
-        // by using for loop.
-        // for(let j=t.length - 1; j>= 0; j--) {
-        //     news += t[j]; 
-        // }
-        
-        // by using reverse method().
-        // news += t.reverse().join("", ",") + " ";
-    // }
-    // return news
+// const t = strArr[i].split("")
+
+// by using for loop.
+// for(let j=t.length - 1; j>= 0; j--) {
+//     news += t[j];
+// }
+
+// by using reverse method().
+// news += t.reverse().join("", ",") + " ";
+// }
+// return news
 // }
 // console.log('Reverse String==', reverseString(d))
 
 // var arrayList = [1 , 2, 3];
 // console.log("isArray", Array.isArray(arrayList));
 // console.log("---", Object.prototype.toString.call(arrayList));
-
 
 //  ***** Implement enqueue and dequeue using only two stacks in JavaScript *****
 
@@ -220,9 +219,9 @@
 // dequeue();
 // console.log("stack1--", stack1, 'stack2--', stack2.reverse());
 
-// **** 
-// Create a for loop that iterates up to 100 while outputting 
-// "fizz" at multiples of 3, "buzz" at multiples of 5 and 
+// ****
+// Create a for loop that iterates up to 100 while outputting
+// "fizz" at multiples of 3, "buzz" at multiples of 5 and
 // "fizzbuzz" at multiples of 3 and 5.
 // ****
 
@@ -254,7 +253,7 @@
 // let reverseStr = "";
 // function palindromeString(str) {
 //     // return str.split("").reverse().join("") === str;
-    
+
 //     // for(let i =str.length - 1; i>=0;i--){
 //     //     reverseStr += str.charAt(i);
 //     // }
@@ -349,15 +348,14 @@
 //     constructor(name, age, mobile) {
 //         this.n = name;
 //         this.a = age;
-//         this.m = mobile 
+//         this.m = mobile
 //     }
 // }
 // debugger;
 // const data = new objectCreate("Rohit", 29, 8983868905);
 // console.log(data);
 
-
-// using Object.create method 
+// using Object.create method
 
 // const g =  {"name" :"rohit", person: function() { return "name " + this.name}}
 // const data = Object.create(g);
@@ -378,7 +376,6 @@
 
 // const d = calculate(2,9,add);
 // console.log(d);
-
 
 // lexical scope
 
@@ -413,7 +410,7 @@
 //     let obj= {}
 //     let neArr =[];
 //     for(let x of h) {
-//        obj[x.name] = x.name 
+//        obj[x.name] = x.name
 //     }
 //     for(let jo of Object.keys(obj)) {
 //         neArr.push({"name": jo})
@@ -435,7 +432,6 @@
 // const b = obj.getFun.bind(obj);
 // console.log("bind", b("kamble", "test"))
 
-
 // ***** convert minute to Second
 
 // function minuteToSecond(minute){
@@ -447,7 +443,6 @@
 // }
 // console.log("ans=", hourToSecoond(2));
 
-
 // **** convert Age to Days
 
 // function ageToDays(age) {
@@ -457,12 +452,12 @@
 //     for(let i = birthYear; i<currentYear; i++) {
 //         if(i % 4 === 0 || (i % 400 === 0 && i % 100 === 0)) {
 //             val += 366;
-            
+
 //         }
 //         else {
 //             val += 365;
 //         }
-        
+
 //     }
 //     return val;
 // }
@@ -484,10 +479,10 @@
 // console.log("ans=", sumOfPolygone(6));
 
 // ***** Football Points ****
-// ***** wins get 3 points ** 
-// ***** draws get 1 point ** 
+// ***** wins get 3 points **
+// ***** draws get 1 point **
 // ***** losses get 0 points
- 
+
 // function footballPoint(win, draws, losses){
 //     let result=0;
 //     result += win * 3;
@@ -500,7 +495,7 @@
 
 // **** Profitable Gamble *****
 // function profitableGamble(prob, prize, pay){
-//     return (prob * prize) > pay; 
+//     return (prob * prize) > pay;
 // }
 
 // console.log("ans", profitableGamble(0.9, 3, 2))
@@ -533,7 +528,7 @@
 
 // function divideEvenly(a, b){
 //     console.log("--", (a % b));
-//     return (a % b === 0); 
+//     return (a % b === 0);
 // }
 
 // console.log("result =", divideEvenly(98, 7));
@@ -577,7 +572,7 @@
 
 // console.log("result=", carsNedded(0));
 
-// itreative way 
+// itreative way
 
 // function carNeddedItrative(n){
 //     let count = 0;
@@ -610,10 +605,30 @@
 
 // ***** valid number *****
 
-function validNumber(n) {
-    return !isNaN(n);
-}
-console.log("valid Number=", validNumber("374"))
-console.log("valid Number=", validNumber("37.8"))
-console.log("valid Number=", validNumber("37..4"))
-console.log("valid Number=", validNumber("number"))
+// function validNumber(n) {
+//     return !isNaN(n);
+// }
+// console.log("valid Number=", validNumber("374"))
+// console.log("valid Number=", validNumber("37.8"))
+// console.log("valid Number=", validNumber("37..4"))
+// console.log("valid Number=", validNumber("number"))
+
+// function countTrue(arr) {
+//   if (arr.length > 0) {
+//     return arr.filter((item) => item).length;
+//   } else {
+//     return 0;
+//   }
+// }
+
+// const tr = [false, false, false, false];
+// console.log("***", countTrue(tr));
+
+// Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
+// function sevenBoom(arr) {
+//   return arr.filter((x) => x.toString().includes("7")).length
+//     ? "Boom!"
+//     : "there is no 7 in the array";
+// }
+
+// console.log(sevenBoom([2, 55, 60, 97, 86]));

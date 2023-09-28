@@ -19,8 +19,8 @@ function sequenceBreak(num){
     let index= 0;
     num.forEach((x, i) => {
         if(Math.abs(x - num[i+1]) !== 1){
-            d.push(num[index]+","+x)
-            index = i +1;
+            d.push(num[index]+"-"+x)
+            index = i + 1;
         }
     });
     return d;

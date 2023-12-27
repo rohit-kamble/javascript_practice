@@ -1,2 +1,1 @@
-import number from './testing';
-console.log(number);
+// console.log(number);

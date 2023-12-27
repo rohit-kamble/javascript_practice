@@ -632,3 +632,244 @@
 // }
 
 // console.log(sevenBoom([2, 55, 60, 97, 86]));
+
+// Create a function that takes one, two or more numbers as arguments and adds them together to get a new number.
+// The function then repeatedly multiplies the digits of the new number by each other, yielding a new number,
+// until the product is only 1 digit long. Return the final product.
+
+// function sumDigProd(arr) {
+//   if ((arr && arr.toString().length === 1) || arr === 0) {
+//     return arr;
+//   } else {
+//     if (typeof arr === "object") {
+//       const tr = [...arr].reduce((acc, item) => (acc ? acc + item : 0));
+//       return sumDigProd(tr);
+//     } else {
+//       if (arr && arr.toString().length === 2) {
+//         const tr = arr
+//           .toString()
+//           .split("")
+//           .reduce((acc, item) => acc * item);
+//         return sumDigProd(tr);
+//       } else {
+//         return sumDigProd(0);
+//       }
+//     }
+//   }
+// }
+// console.log("ans--", sumDigProd(0));
+
+// Write a function that retrieves the top 3 longest words of a newspaper headline
+// and transforms them into hashtags. If multiple words tie for the same length,
+// retrieve the word that occurs first.
+
+// function getHashTags(str) {
+//   const converArr = str.split(" ");
+//   let obj = {};
+//   let ans = [];
+//   for (let x of converArr) {
+//     obj[x] = x;
+//   }
+//   const values = Object.values(obj).sort((a, b) => b.length - a.length);
+//   for (let y in values) {
+//     if (y < 3) {
+//       ans.push(`#${values[y].toLowerCase()}`);
+//     }
+//   }
+//   return ans;
+// }
+
+// console.log(
+//   getHashTags(
+//     "Why You Will Probably Pay More for Your Christmas Tree This Year"
+//   )
+// );
+// const y = [0, 0, 1, 1, 0, 1];
+// const data = [];
+// const yi = y.reduce((acc, currnt) => {
+//   if (currnt === 1) {
+//     data.push(currnt);
+//     acc = data;
+//     return acc;
+//   } else {
+//     data.unshift(currnt);
+//     acc = data;
+//     return acc;
+//   }
+// }, data);
+// console.log(yi);
+
+// `````````````````````````````````````````````````````````````````````````````````````````const array1 = ["1", "2", "3", "4", "5"],
+//   array2 = ["4", "5", "6", "7", "8"];
+
+// const mer = [...array1, ...array2];
+// let obj = {};
+// function counObj(mer) {
+//   let data = [];
+//   for (let x of mer) {
+//     if (x in obj) {
+//       data.push(x);
+//     } else {
+//       obj[x] = x;
+//     }
+//   }
+//   return data;
+// }`````````````````````````````````````````````````````````````````````````````````````````
+
+// console.log(counObj(mer));
+
+// const t = "tihor";
+// console.log(t.split("").reverse().join(""));
+
+// function str(st) {
+//   return st.split("").reverse().join("") === st;
+// }
+
+// console.log(str("mom"));
+
+// const d = [{ a: 1, b: 2, c: 3 }];
+// // const ans = d.reduce((acc, current) => acc + current.a, 0);
+// const storeArr = Object.values(d[0]);
+// const ans = storeArr.reduce((acc, current) => acc + current, 0);
+// console.log("----", ans);
+// [1, [2,[3,[4]]]] => [1,2,3,4]
+
+// const data = [];
+// function sortArrt(arr) {
+//   if (typeof arr !== "object") {
+//     data.push(arr);
+//     return arr;
+//   } else {
+//     for (let x of arr) {
+//       if (typeof x === "object") {
+//         return sortArrt(x);
+//       } else {
+//         data.push(x);
+//       }
+//     }
+//   }
+// }
+
+// sortArrt([1, [2, [3, [4]]]]);
+// console.log("==", data);
+// const sequenceBreak = [1, 2, 3, 7, 8, 9, 11, 12, 13];
+// function sequenceBreaks(sequenceBreak1) {
+//   let start = sequenceBreak1[0];
+//   const data = [];
+//   for (let x in sequenceBreak1) {
+//     if (Math.abs(sequenceBreak1[x] - sequenceBreak1[parseInt(x) + 1]) !== 1) {
+//       data.push(`${start} - ${sequenceBreak1[x]}`);
+//       start = sequenceBreak1[parseInt(x) + 1];
+//     }
+//   }
+//   return data;
+// }
+// const ans = sequenceBreaks(sequenceBreak);
+// console.log("====", ans);
+// console.log("a=", a);
+// var a; // let a;
+// console.log("a1=", a);
+// a = 5;
+// console.log("a2=", a);
+
+// var nestedObject = {
+//   data: {
+//     info: {
+//       stuff: {
+//         thing: {
+//           moreStuff: {
+//             magicNumber: 44,
+//             something: "foo2",
+//           },
+//         },
+//       },
+//     },
+//   },
+// };
+// function contains(obj, value) {
+//   let result = false;
+
+//   function search(obj, value) {
+//     for (let key in obj) {
+//       if (obj.hasOwnProperty(key)) {
+//         if (obj[key] === value) {
+//           result = true;
+//         } else if (typeof obj[key] === "object" && obj[key] !== null) {
+//           return search(obj[key], value);
+//         }
+//       }
+//     }
+//   }
+
+//   search(obj, value);
+//   return result;
+// }
+
+// let hasIT = contains(nestedObject, "foo");
+// console.log("-----", hasIT);
+
+// const getData = async () => {
+//   var data = "Hello World";
+//   return await data;
+// };
+// getData().then((res) => console.log("---", res));
+
+// const dg = [1, 2, 3];
+
+// const a = "mary",
+//   b = "arym";
+// let test = false;
+// test = a.split("").every((item) => b.includes(item));
+
+// console.log("--", test);
+// const data = { a: 10, b: 20 };
+// let sum = 0;
+// for (let x in data) {
+//   sum += data[x];
+// }
+// console.log(sum);
+
+// const data = "eve";
+// let state = true;
+// for (let x in data) {
+//   if (state) {
+//     state = data[x] === data[data.length - 1 - x];
+//   } else {
+//     state = false;
+//   }
+// }
+
+// console.log("****", state);
+
+// let arrrd = [2, 3, 4, 5, 6, 14, 13, 12, 11, 10];
+// let newArr = [];
+// let c = 0;
+// let initail = arrrd[c];
+
+// function sum(arr) {
+//   if (c === arrrd.length - 1) {
+//     return newArr;
+//   } else {
+//     for (let x of arr) {
+//       if (initail + x === 16) {
+//         c++;
+//         newArr.push([initail, x]);
+//       }
+//     }
+//     initail = arrrd[c];
+//     sum(arr);
+//     return newArr;
+//   }
+// }
+
+// console.log(sum(arrrd));
+
+// const ans = [];
+// for (let j of arrrd) {
+//   for (let k of arrrd) {
+//     if (j + k === 16) {
+//       ans.push([j, k]);
+//     }
+//   }
+// }
+// console.log("==", ans);

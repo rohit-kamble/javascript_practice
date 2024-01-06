@@ -6,14 +6,17 @@
 function commonElements(ar1, ar2) {
   const common = [...ar1, ...ar2];
   let obj = {};
-  const t = [];
+  let t = [];
   for (let x of common) {
+    console.log(obj[x]);
     if (obj[x]) {
-      t.push(obj[x]);
+      console.log(obj[x]);
+      t.push(x);
     } else {
       obj[x] = x;
     }
   }
-  return [...new Set(t)];
+  const ans = new Set(t);
+  return t;
 }
 console.log("---", commonElements([1, 2, 3, 4, 5], [10, 12, 13, 15]));
